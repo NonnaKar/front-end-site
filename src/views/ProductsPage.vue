@@ -4,7 +4,7 @@
     <div 
       v-for="product in products" 
       class="product-item" 
-      v-bind:key="product.id"
+      :key="product.id"
     >
       <img v-bind:src="product.imageUrl" />
       <h3 class="product-name">{{ product.name }}</h3>
